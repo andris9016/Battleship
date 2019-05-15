@@ -8,9 +8,9 @@ public class Player {
     public static void playerInput(int[][] arr) {
         int x, y;
         Scanner reader = new Scanner(System.in);
-        System.out.print("Enter your x coordinate: ");
+        System.out.print("\nEnter your x coordinate: ");
         x = reader.nextInt();
-        System.out.print("Enter your y coordinate: ");
+        System.out.print("\nEnter your y coordinate: ");
         y = reader.nextInt();
         if ((x >= 10) || (y >= 10)) {
             System.out.println("Invalid");
@@ -18,7 +18,7 @@ public class Player {
             System.out.println("Already entered this point");
         } else {
             arr[x][y] = 1;
-            System.out.println("YOUR SHIP is deployed x = " + x + " y = " + y);
+            System.out.println("\nYOUR SHIP is deployed x = " + x + " y = " + y);
         }
     }
 

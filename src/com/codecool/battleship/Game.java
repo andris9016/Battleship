@@ -1,5 +1,6 @@
 package com.codecool.battleship;
 
+import com.codecool.termlib.*;
 
 public class Game {
 
@@ -11,8 +12,15 @@ public class Game {
                 fieldArray[i][j] = 0;
             }
         }
-        System.out.println("\n**** Welcome to Battle Ships game ****");
-        System.out.println("      Right now, the sea is empty\n");
+
+        Terminal terminal = new Terminal();
+        Color redColor = Color.RED;
+        String red = terminal.getColor(redColor);
+
+        String reset = terminal.getResetStyle();
+
+        System.out.println("\n                    " + red + "**** Welcome to Battle Ships game ****");
+        System.out.println("                          Right now, the sea is empty\n" + reset);
         
         Field field1 = new Field();
         Player player1 = new Player();
@@ -22,7 +30,5 @@ public class Game {
         field1.printField(fieldArray);
         player1.playerTurn(fieldArray);
     }
-
-    
 
 }
