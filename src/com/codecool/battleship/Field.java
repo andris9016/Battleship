@@ -7,9 +7,9 @@ public class Field {
             System.out.print("        ");
             for (int j = 0; j < 10; j++) {
                 if(arr[i][j] == 0) {
-                    System.out.print("~ ");
+                    System.out.print(" ~~~~ ");
                 } else if(arr[i][j] == 1) {
-                    System.out.print("@ ");
+                    System.out.print("__/\\__");
                 }
 
             }
