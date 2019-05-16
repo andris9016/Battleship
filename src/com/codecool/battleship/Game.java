@@ -6,6 +6,7 @@ public class Game {
 
     public static void main(String[] args) {
 	Menu startmsg = new Menu();
+	startmsg.start();
 	String firstPlayer = startmsg.getPlayer1Name();
 	String secondPlayer = startmsg.getPlayer2Name();	
 	System.out.print(firstPlayer);
@@ -19,7 +20,7 @@ public class Game {
 	String green = terminal.getColor(greenColor);
         String reset = terminal.getResetStyle();
 
-        System.out.println("\n              " + red + "**** Welcome to Battle Ships game ****");
+        System.out.println("\n              " + red + "**** Welcome to Battle Ships "+firstPlayer+ " and " +secondPlayer+ " ****");
         System.out.println("                    Right now, the sea is empty\n" + reset);
         
         Field field1 = new Field();
@@ -33,25 +34,28 @@ public class Game {
 
         //place ships
         field1.printField(fieldArray1);
-        System.out.println(green + "	First player" + reset);
+        System.out.println(green + firstPlayer + reset);
 
         player1.playerInput(fieldArray1);
 	terminal.clearScreen();
 
-        System.out.println(green + "	Second player" + reset);
+        System.out.println(green + secondPlayer + reset);
         player2.playerInput(fieldArray2);
 	terminal.clearScreen();
 
 	//attack
-        System.out.println(green + "	First player" + reset);
-        player1.playerTurn(fieldArray2);
-
 	
-	
+	while (true) {
+		System.out.println(green + firstPlayer + reset);
+		
+		player1.playerTurn(fieldArray2);
 
-        System.out.println(green + "	Second player" + reset);
 
-        player2.playerTurn(fieldArray1);
+
+		System.out.println(green + secondPlayer + reset);
+
+		player2.playerTurn(fieldArray1);
+	}
     }
 
 }
