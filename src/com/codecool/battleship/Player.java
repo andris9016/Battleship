@@ -67,12 +67,8 @@ public class Player {
         if ((x >= 10) || (y >= 10)) {
             System.out.println(red + "\nInvalid coordinates!\n" + reset);
         } else if (arr[x][y] == 1) {
-<<<<<<< HEAD
             System.out.println(green + "You hit the enemy! And you WON!!!" + reset);
 	    System.exit(0);	
-=======
-            System.out.println(green + "\nYou hit the enemy! And you WON!!!" + reset);
->>>>>>> 910d118463a8e49405410af734bfc04ec0d393f3
         }
     }
 }

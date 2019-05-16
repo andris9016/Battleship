@@ -5,11 +5,11 @@ import com.codecool.termlib.*;
 public class Game {
 
     public static void main(String[] args) {
-	//Menu startmsg = new Menu();
-	//String firstPlayer = startmsg.getPlayer1Name();
-	//String secondPlayer = startmsg.getPlayer2Name();	
-	//System.out.print(firstPlayer);
-	//System.out.print(secondPlayer);
+	Menu startmsg = new Menu();
+	String firstPlayer = startmsg.getPlayer1Name();
+	String secondPlayer = startmsg.getPlayer2Name();	
+	System.out.print(firstPlayer);
+	System.out.print(secondPlayer);
 
         
         Terminal terminal = new Terminal();
@@ -33,12 +33,8 @@ public class Game {
 
         //place ships
         field1.printField(fieldArray1);
-<<<<<<< HEAD
-
-        System.out.println(firstPlayer);
-=======
         System.out.println(green + "	First player" + reset);
->>>>>>> 910d118463a8e49405410af734bfc04ec0d393f3
+
         player1.playerInput(fieldArray1);
 	terminal.clearScreen();
 
@@ -49,13 +45,12 @@ public class Game {
 	//attack
         System.out.println(green + "	First player" + reset);
         player1.playerTurn(fieldArray2);
-<<<<<<< HEAD
+
 	
 	
-        System.out.println(secondPlayer);
-=======
+
         System.out.println(green + "	Second player" + reset);
->>>>>>> 910d118463a8e49405410af734bfc04ec0d393f3
+
         player2.playerTurn(fieldArray1);
     }
 
