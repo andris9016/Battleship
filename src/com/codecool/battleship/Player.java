@@ -8,15 +8,15 @@ public class Player {
     public static void playerInput(int[][] arr) {
         int x, y;
         Scanner reader = new Scanner(System.in);
-        System.out.print("\nEnter your row coordinate: ");
+        System.out.print("\nEnter the row: ");
         x = reader.nextInt()-1;
-        System.out.print("\nEnter your column coordinate: ");
+        System.out.print("\nEnter the column: ");
         y = reader.nextInt()-1;
         while((x >= 10) || (y >= 10)) {
             System.out.println("Invalid");
-            System.out.print("\nEnter your row coordinate: ");
+            System.out.print("\nEnter the row: ");
             x = reader.nextInt()-1;
-            System.out.print("\nEnter your column coordinate: ");
+            System.out.print("\nEnter the column: ");
             y = reader.nextInt()-1;
         }
         if (arr[x][y] == 1) {
@@ -31,9 +31,9 @@ public class Player {
         int x, y;
         Scanner reader = new Scanner(System.in);
         System.out.println("ATTACK");
-        System.out.print("Pleas enter the x coordinate: ");
+        System.out.print("Pleas enter the row: ");
         x = reader.nextInt()-1;
-        System.out.print("Please enter the y coordinate: ");
+        System.out.print("Please enter the column: ");
         y = reader.nextInt()-1;
         if ((x >= 10) || (y >= 10)) {
             System.out.println("Invalid");

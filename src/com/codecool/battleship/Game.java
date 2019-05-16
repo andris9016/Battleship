@@ -24,9 +24,10 @@ public class Game {
         Player player1 = new Player();
         int[][] fieldArray1 = field1.makeField();
 
-        int[][] fieldArray2 = field1.makeField();
+        
         Field field2 = new Field();
         Player player2 = new Player();
+        int[][] fieldArray2 = field1.makeField();
 
         
         field1.printField(fieldArray1);
