@@ -59,10 +59,17 @@ public class Player {
 
 
         Scanner reader = new Scanner(System.in);
+<<<<<<< HEAD
         System.out.println(red + "ATTACK!!!" + reset);
         System.out.print("\nEnter your " + magenta + "Row" + reset + " coordinate: \n ");
         x = reader.nextInt()-1;
         System.out.print("\nEnter your " + magenta + "Column" + reset + " coordinate: \n");
+=======
+        System.out.println("ATTACK");
+        System.out.print("Pleas enter the row: ");
+        x = reader.nextInt()-1;
+        System.out.print("Please enter the column: ");
+>>>>>>> 52e54d7c5d4a97ba8ae2f0490f92e42f93e4e245
         y = reader.nextInt()-1;
         if ((x >= 10) || (y >= 10)) {
             System.out.println(red + "\nInvalid coordinates!\n" + reset);
