@@ -68,6 +68,7 @@ public class Player {
             System.out.println(red + "\nInvalid coordinates!\n" + reset);
         } else if (arr[x][y] == 1) {
             System.out.println(green + "You hit the enemy! And you WON!!!" + reset);
+	    System.exit(0);	
         }
     }
 }

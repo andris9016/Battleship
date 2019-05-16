@@ -33,6 +33,7 @@ public class Game {
 
         
         field1.printField(fieldArray1);
+
         System.out.println(firstPlayer);
         player1.playerInput(fieldArray1);
         field1.printField(fieldArray1);
@@ -43,6 +44,8 @@ public class Game {
 
         System.out.println(firstPlayer);
         player1.playerTurn(fieldArray2);
+	
+	
         System.out.println(secondPlayer);
         player2.playerTurn(fieldArray1);
     }
