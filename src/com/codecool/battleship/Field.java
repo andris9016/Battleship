@@ -27,7 +27,9 @@ public class Field {
             for (int j = 0; j < 10; j++) {
                 if(arr[i][j] == 0) {
                     System.out.print(" ~~~ ");
-                } 
+                } else if (arr[i][j] == 0) {
+                    System.out.print(" X ");
+                }
 
             }
             terminal.resetStyle();

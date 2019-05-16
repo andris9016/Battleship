@@ -66,7 +66,10 @@ public class Player {
         y = reader.nextInt()-1;
         if ((x >= 10) || (y >= 10)) {
             System.out.println(red + "\nInvalid coordinates!\n" + reset);
-        } else if (arr[x][y] == 1) {
+        } else if(arr[x][y] == 0){
+		arr[x][y] = 2;
+		
+	} else if (arr[x][y] == 1) {
             System.out.println(green + "You hit the enemy! And you WON!!!" + reset);
 	    System.exit(0);	
         }

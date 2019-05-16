@@ -40,6 +40,7 @@ public class Game {
 	terminal.clearScreen();
 
         System.out.println(green + secondPlayer + reset);
+	field1.printField(fieldArray2);
         player2.playerInput(fieldArray2);
 	terminal.clearScreen();
 
@@ -47,13 +48,13 @@ public class Game {
 	
 	while (true) {
 		System.out.println(green + firstPlayer + reset);
-		
+		field1.printField(fieldArray2);
 		player1.playerTurn(fieldArray2);
 
 
 
 		System.out.println(green + secondPlayer + reset);
-
+		field1.printField(fieldArray1);
 		player2.playerTurn(fieldArray1);
 	}
     }
