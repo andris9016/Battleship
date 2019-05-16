@@ -12,15 +12,17 @@ public class Menu {
 		Color red = Color.RED;
 		Color blue = Color.BLUE;
 		Color green = Color.GREEN;
+		Color yellow = Color.YELLOW;
 		
 		// Get ANSI codes
 		String redColor = terminal2.getColor(red);
 		String greenColor = terminal2.getColor(green);
+		String yellowColor = terminal2.getColor(yellow);
 		String reset = terminal2.getResetStyle();
 
-		System.out.println(greenColor + "Battleship Game" + reset + "\n");
-		System.out.print("1, New Game" + "\n"); 
-		System.out.print("2, Exit" + "\n");
+		System.out.println(greenColor + "\nBattleship Game" + reset + "\n");
+		System.out.print(yellowColor + "1, New Game" + reset + "\n" ); 
+		System.out.print(yellowColor + "2, Exit" + reset + "\n");
 		Scanner reader = new Scanner(System.in);
 		char clear = reader.next().charAt(0);
 		if(clear == '1') {
