@@ -5,6 +5,12 @@ import com.codecool.termlib.*;
 public class Game {
 
     public static void main(String[] args) {
+	//Menu startmsg = new Menu();
+	//String firstPlayer = startmsg.getPlayer1Name();
+	//String secondPlayer = startmsg.getPlayer2Name();	
+	//System.out.print(firstPlayer);
+	//System.out.print(secondPlayer);
+
         
         Terminal terminal = new Terminal();
         Color redColor = Color.RED;
