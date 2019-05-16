@@ -6,8 +6,6 @@ public class Game {
 
     public static void main(String[] args) {
         
-
-
         Terminal terminal = new Terminal();
         Color redColor = Color.RED;
         String red = terminal.getColor(redColor);
@@ -26,14 +24,17 @@ public class Game {
 
         
         field1.printField(fieldArray1);
+        System.out.println("First player");
         player1.playerInput(fieldArray1);
         field1.printField(fieldArray1);
         
-
+        System.out.println("Second player");
         player2.playerInput(fieldArray2);
         field2.printField(fieldArray2);
 
+        System.out.println("First player");
         player1.playerTurn(fieldArray2);
+        System.out.println("Second player");
         player2.playerTurn(fieldArray1);
     }
 
