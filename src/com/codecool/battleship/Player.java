@@ -59,7 +59,7 @@ public class Player {
 
 
         Scanner reader = new Scanner(System.in);
-        System.out.println(red + "\nATTACK!!!" + reset);
+        System.out.println(red + "\n	ATTACK!!!" + reset);
         System.out.print("\nEnter your " + magenta + "Row" + reset + " coordinate: \n ");
         x = reader.nextInt()-1;
         System.out.print("\nEnter your " + magenta + "Column" + reset + " coordinate: \n");

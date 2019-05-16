@@ -31,20 +31,20 @@ public class Game {
         Player player2 = new Player();
         int[][] fieldArray2 = field1.makeField();
 
-        
+        //place ships
         field1.printField(fieldArray1);
-        System.out.println(green + "First player" + reset);
+        System.out.println(green + "	First player" + reset);
         player1.playerInput(fieldArray1);
 	terminal.clearScreen();
 
-        
-        System.out.println(green + "Second player" + reset);
+        System.out.println(green + "	Second player" + reset);
         player2.playerInput(fieldArray2);
 	terminal.clearScreen();
 
-        System.out.println(green + "First player" + reset);
+	//attack
+        System.out.println(green + "	First player" + reset);
         player1.playerTurn(fieldArray2);
-        System.out.println(green + "Second player" + reset);
+        System.out.println(green + "	Second player" + reset);
         player2.playerTurn(fieldArray1);
     }
 
