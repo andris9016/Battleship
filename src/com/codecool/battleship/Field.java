@@ -6,20 +6,29 @@ import com.codecool.termlib.*;
 public class Field {
 
     
+    public int[][] makeField() {
+        int[][] fieldArray = new int[10][10];
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 10; j++) {
+                fieldArray[i][j] = 0;
+            }
+        }
+        return fieldArray;
+    }
+
+    
     public static void printField(int[][] arr) {
         Terminal terminal = new Terminal();
         Color blue = Color.BLUE;
-        Color whiteBg = Color.WHITE_BACKGROUND;
 
         for (int i = 0; i < 10; i++) {
             terminal.setColor(blue);
             System.out.print("        ");
-            terminal.setBgColor(whiteBg);
             for (int j = 0; j < 10; j++) {
                 if(arr[i][j] == 0) {
-                    System.out.print(" ~~~~ ");
+                    System.out.print(" ~~~ ");
                 } else if(arr[i][j] == 1) {
-                    System.out.print("__/\\__");
+                    System.out.print("  S  ");
                 }
 
             }
