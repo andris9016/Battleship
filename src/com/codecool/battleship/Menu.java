@@ -7,7 +7,9 @@ public class Menu {
 
 	public static void start(){
 		Terminal terminal2 = new Terminal();
-
+		Game newGame = new Game();
+		String[] args = {};
+		terminal2.clearScreen();
 		// Color
 		Color red = Color.RED;
 		Color blue = Color.BLUE;
@@ -28,6 +30,10 @@ public class Menu {
 		if(clear == '1') {
 		    Terminal terminal = new Terminal();
 		    terminal.clearScreen();
+		}else if(clear == '2') {
+		     System.exit(0);
+		}else{
+		     newGame.main(args);
 		}
 		
 		Terminal terminal = new Terminal();

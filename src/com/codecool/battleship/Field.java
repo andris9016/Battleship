@@ -20,6 +20,12 @@ public class Field {
     public static void printField(int[][] arr) {
         Terminal terminal = new Terminal();
         Color blue = Color.BLUE;
+	Color redColor = Color.RED;
+	String red = terminal.getColor(redColor);
+	String reset = terminal.getResetStyle();
+	
+	System.out.println("\n                      " + red + "**** Let's fight  ****");
+        System.out.println("                    \n" + reset);
 
         for (int i = 0; i < 10; i++) {
             terminal.setColor(blue);
@@ -27,8 +33,8 @@ public class Field {
             for (int j = 0; j < 10; j++) {
                 if(arr[i][j] == 0) {
                     System.out.print(" ~~~ ");
-                } else if (arr[i][j] == 0) {
-                    System.out.print(" X ");
+                } else if (arr[i][j] == 2) {
+                    System.out.print("  X  ");
                 }
 
             }

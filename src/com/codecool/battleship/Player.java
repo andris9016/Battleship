@@ -3,9 +3,13 @@ package com.codecool.battleship;
 import java.util.Scanner;
 import com.codecool.termlib.*;
 
+
+
+
 public class Player {
 
     public static void playerInput(int[][] arr) {
+
         int x, y;
 
 	// set colors 
@@ -74,4 +78,6 @@ public class Player {
 	    System.exit(0);	
         }
     }
+
+    
 }
